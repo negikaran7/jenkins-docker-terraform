@@ -80,4 +80,3 @@ user_data = <<-EOF
 data "aws_vpc" "default" {
   default = true
 }
-
