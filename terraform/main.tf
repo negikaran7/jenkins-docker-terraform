@@ -1,5 +1,5 @@
 provider "aws" {
-  region     = "us-east-1"
+  region     = "us-west-1"
   access_key = var.aws_access_key
   secret_key = var.aws_secret_key
 }
@@ -53,7 +53,7 @@ ingress {
 }
 
 resource "aws_instance" "deployment" {
-  ami           = "ami-04a81a99f5ec58529" # Ubuntu Server 20.04 LTS AMI ID for us-east-1 (N. Virginia)
+  ami           = "ami-0ff591da048329e00" # Ubuntu Server 20.04 LTS AMI ID for us-east-1 (N. Virginia)
   instance_type = "t2.micro"
   security_groups = [aws_security_group.deployment_sg.name]
 
